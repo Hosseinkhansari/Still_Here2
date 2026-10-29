@@ -101,15 +101,6 @@ body {
     transition: .5s;
 }
 
-.lamp:hover .bulb, .lamp.on .bulb{
-    background: var(--color);
-    box-shadow: 0 0 15px var(--color), 0 0 35px var(--color);
-}
-
-.lamp:hover .letter, .lamp.on .letter {
-    text-shadow: 0 0 10px var(--color);
-}
-
 .quoet_div {
     width: 100%;
     height: auto;
@@ -180,10 +171,6 @@ body {
     transition: .3s;
 }
 
-#random_quoet_btn:hover {
-    background-color: #c1121f;
-}
-
 .gallery{
     display: flex;
     flex-direction: row;
@@ -198,11 +185,6 @@ body {
     padding: 10px;
     border-radius: 20px;
     transition: .5s;
-}
-
-.gallery img:hover {
-    transform: scale(1.05);
-    height: 500px;
 }
 
 .img_h2 {
@@ -231,18 +213,8 @@ body {
     transition: .3s;
 }
 
-.top_button button:hover {
-    color: #d1d1d1;
-    background-color: rgba(193, 18, 31, 0.55);
-    border-color: rgba(255, 255, 255, .4);
-}
-
 a {
     color: #d1d1d1;
-}
-
-a:hover {
-    color: #99898b;
 }
 
 .sound_h2 {
@@ -351,11 +323,6 @@ a:hover {
     color: #9fb4bb;
     cursor: pointer;
     transition: .3s;
-}
-
-#change_mode:hover{
-    background-color: #1f4a57;
-    border-color: rgba(255, 255, 255, .4);
 }
 
 @keyframes loop {
@@ -483,30 +450,15 @@ h3 {
 
 }
 
-.upside_down #random_quoet_btn:hover{
-    background-color: #d62839;
-
-}
-
 .upside_down .top_button button{
     background-color: rgba(120, 170, 190, .12);
     border: 1px solid rgba(120, 170, 190, .3);
     color: #9fb4bb;
 }
 
-.upside_down .top_button button:hover{
-    background-color: rgba(179, 32, 42, .6);
-    border: 1px solid rgba(216, 230, 234, .4);
-    color: #e6eef0;
-}
-
 .upside_down #change_mode{
     background-color: #9d0208;
     color: #d1d1d1;
-}
-
-.upside_down #change_mode:hover{
-    background-color: #c1121f;
 }
 
 @keyframes float_up {
@@ -515,3 +467,64 @@ h3 {
     90% {opacity: .6;}
     100% {transform: translate(var(--deltaLeft), var(--deltaTop)); opacity: 0;}
 }
+
+/* lit lamps: works on every device */
+.lamp.on .bulb {
+    background: var(--color);
+    box-shadow: 0 0 15px var(--color), 0 0 35px var(--color);
+}
+
+.lamp.on .letter {
+    text-shadow: 0 0 10px var(--color);
+}
+
+/* hover effects: only on devices with a mouse */
+@media (hover: hover) {
+    a:hover {
+        color: #99898b;
+    }
+
+    .lamp:hover .bulb {
+        background: var(--color);
+        box-shadow: 0 0 15px var(--color), 0 0 35px var(--color);
+    }
+
+    .lamp:hover .letter {
+        text-shadow: 0 0 10px var(--color);
+    }
+
+    #random_quoet_btn:hover {
+        background-color: #c1121f;
+    }
+
+    .gallery img:hover {
+        transform: scale(1.05);
+    }
+
+    .top_button button:hover {
+        color: #d1d1d1;
+        background-color: rgba(193, 18, 31, 0.55);
+        border-color: rgba(255, 255, 255, .4);
+    }
+
+    #change_mode:hover {
+        background-color: #1f4a57;
+        border-color: rgba(255, 255, 255, .4);
+    }
+
+    /* Upside Down mode */
+    .upside_down #random_quoet_btn:hover {
+        background-color: #d62839;
+    }
+
+    .upside_down .top_button button:hover {
+        background-color: rgba(179, 32, 42, .6);
+        border: 1px solid rgba(216, 230, 234, .4);
+        color: #e6eef0;
+    }
+
+    .upside_down #change_mode:hover {
+        background-color: #c1121f;
+    }
+}
+
