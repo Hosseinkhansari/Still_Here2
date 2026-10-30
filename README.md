@@ -2,14 +2,14 @@
 
 A Stranger Things fan page built with plain HTML, CSS and JavaScript.
 
-**Live demo:** https://hosseinkhansari.github.io/Still_Here/
+**Live demo:** https://hosseinkhansari.github.io/Still_Here2/
 
 ## Features
--ML, CSS and JavaSan interactive alphabet wall inspired by the show. Hover over a letter to light its bulb, click to keep it on, click again to turn it off.
--Here/
+-L, CSS and JavaScan interactive alphabet wall inspired by the show. Hover over a letter to light its bulb, click to keep it on, click again to turn it off.
+-Here2/
 
 ## Features
-- **a toggle button that changes the whole theme and adds floating spores.
+- *a toggle button that changes the whole theme and adds floating spores.
 -JavaScript.
 
 **Live demo:** hshows a random quote and never repeats the previous one.
@@ -17,7 +17,7 @@ A Stranger Things fan page built with plain HTML, CSS and JavaScript.
 - Responsive layout for desktop and mobile.
 
 ## What I practiced
-- DOM manipulation withw. Hover over a l# Still Here
+- DOM manipulation withow. Hover over a # Still Here
 and event listeners
 - CSS variables for coloring each bulb and switching themes
 -t.
